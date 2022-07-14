@@ -1,0 +1,278 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu';
+    -webkit-print-color-adjust:exact !important;
+    color-adjust:exact !important
+}
+body{
+    display: flex;
+    justify-content: center;
+    /* height: 100vh; */
+    color:rgb(48, 48, 48);
+    background-color: grey;
+}
+p{
+font-size: 20px;  
+padding: 1%; 
+}
+.container
+{
+    background-color: white;
+    width: 70%;
+    padding: 1.5%;
+    height: 100%;
+}
+.row1
+{
+    height: 30%;
+    padding: 1.5%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+img{
+    border: 1px solid rgb(126, 126, 0);
+}
+.namepost
+{
+    padding: 2.5%;
+}
+.namepost h1{
+    font-size: 50px;
+    color: rgb(48, 48, 48);;
+}
+.namepost h2{
+    font-size: 25px;
+    color: rgb(0, 177, 201);
+}
+.contacts
+{
+    display: flex;
+    width:40%;
+}
+.key p
+{
+    
+    text-align: right;
+    font-weight: 900;
+    line-height: 30px;   /* within paragraph */
+/* margin-bottom: 30px;  */
+}
+.value p{
+    line-height: 32px;
+}
+.part1
+{
+    width:70%;
+    height: 7%;
+}
+.headsection
+{
+display: flex;
+align-items: center;
+width: 100%;
+background-color: rgb(48, 48, 48);
+border-radius: 5px 0px 0px 5px;
+color:white;
+height: 50px;
+}
+.row2
+{
+padding: 1.5%;
+display: flex;
+height: 40%;
+}
+.headsection button{
+border: none;
+background-color: rgb(0, 140, 255);
+width: 6%;
+color: white;
+border-radius: 5px;
+height: 100%;
+font-size: 30px;;
+}
+.headsection h2{
+margin-left:20px
+}
+.title button{
+height: 25px;
+width: 25px;
+padding: 0;
+border-radius: 50%;
+background-color:rgb(0, 140, 255); 
+color:white;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 22px;
+border: none;
+}
+.title{
+margin-top:6%;
+display:flex;justify-content: space-between;
+}
+table{
+    width: 100%;
+}
+.title1
+{
+    display:flex;width: 80%;
+}
+.child1
+{
+    margin-left: 1%;width: 100%;
+}
+.second button
+{
+    background-color: rgb(32, 204, 32);
+}
+.second
+{
+    margin-top: 10%;
+}
+.first
+{
+    padding-top:13%;
+}
+.part2
+{
+    padding-left:8%;
+    width:20%;
+}
+.prgressbox
+{
+    margin-top: 11%;
+}
+.prgressbar
+{
+    height: 20px;
+    background-color: rgb(219, 219, 219);
+    margin-top: 2%;
+}
+.fill
+{
+ 
+    height: 100%;
+
+}
+.fill p{
+    font-size: 100%;
+}
+.wrap
+{
+    margin-top: 4%;
+}
+.wrap p{
+    font-size: 18px;
+}
+.title p
+{
+    font-size: 25px;
+    width: 23%;
+    color: grey;
+    text-align: right;
+}
+.graphicskills,.languageskills
+{
+    margin-top:30%
+}
+.sqbox
+{
+    height: 15px;
+    width: 15px;
+}
+.graphbox,.languagebox
+{
+    padding-top: 13%;
+}
+.wrapgrapgic p{
+    margin-left: 1.5%;
+}
+.wraplanguage
+{
+    margin-top: 4%;
+}
+.circlebox
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 0px 1% 0px 1%;
+    border:1px solid rgb(185, 185, 185)
+}
+.child1 h4{
+    color: grey;
+    font-size: 20px;
+}
+@media screen and (max-width:1400px) {
+    .container
+    {
+       width: 100%
+    }
+    .row1
+    {
+        flex-direction: column;
+    }
+    .contacts
+    {
+        width: 100%;
+    }
+.profileimg{
+    height: 120px;
+}
+tbody p{
+    padding: 0px;
+}
+.key p{
+    text-align: left;
+    line-height: 12px;
+    width: 60%;
+}
+td{
+    width: 50%;
+}
+ .xlp
+ {
+    width: 100% !important;
+    justify-content: space-between;
+ }
+    .namepost h1{
+        font-size: 20px;
+    }
+    .contacts p{
+        font-size:15px ;
+    }
+    .contacts .key p{
+        font-size: 15px;
+    } 
+    .row2
+    {
+        flex-direction: column;
+    }
+    .part1
+    {
+        width: 100%;
+    }
+    .part2{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .graphicskills,.languageskills,.skillsection
+    {margin-top: 6%;}
+    p{
+        font-size: 15px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    .title p{
+        font-size: 20px;
+    }
+}
