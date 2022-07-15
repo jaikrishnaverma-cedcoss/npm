@@ -3,7 +3,7 @@
     padding: 0px;
     font-family: 'Ubuntu';
     -webkit-print-color-adjust:exact !important;
-    color-adjust:exact !important
+    color-adjust:exact !important;
 }
 body{
     display: flex;
@@ -39,7 +39,7 @@ img{
     padding: 2.5%;
 }
 .namepost h1{
-    font-size: 50px;
+    font-size: 37px;
     color: rgb(48, 48, 48);;
 }
 .namepost h2{
@@ -59,9 +59,7 @@ img{
     line-height: 30px;   /* within paragraph */
 /* margin-bottom: 30px;  */
 }
-.value p{
-    line-height: 32px;
-}
+
 .part1
 {
     width:70%;
@@ -205,10 +203,20 @@ table{
     color: grey;
     font-size: 20px;
 }
-@media screen and (max-width:1400px) {
+@media screen and (max-width:900px) {
     .container
     {
        width: 100%
+    }
+    .headsection{
+        height: 35px;
+        
+    }
+    .headsection h2{
+        font-size: 22px;
+    }
+    p{
+        padding-left: 2%;
     }
     .row1
     {
@@ -238,7 +246,7 @@ td{
     justify-content: space-between;
  }
     .namepost h1{
-        font-size: 20px;
+        font-size: 26px;
     }
     .contacts p{
         font-size:15px ;
@@ -275,4 +283,184 @@ td{
     .title p{
         font-size: 20px;
     }
+    .part2 h3{
+        font-size: 13px;
+    }
+    .wrap p,.wraplanguage p,.wrapgrapgic p
+    {
+      font-size:11px
+    }
+    .wrap .prgressbar
+    {
+        height: 7px;
+        width: 90%;
+    }
+    .circlebox {
+        height: 10px;
+        width: 10px;
+    }
+    .sqbox {
+        height: 10px;
+        width: 10px;
+    }
+    .wrap {
+        margin-top: 0%;
+    }
+    .value p {
+        line-height: 20px;
+    }
+    table{
+        margin-top: 3%;
+        color: white;
+        background-color: #343030;
+        border: 0;
+        border-radius: 13px;
+        padding: 2%;
+    }
+    table a
+    {
+        color: rgb(0, 153, 255);
+    }
+    .child1 h2{
+        font-size: 20px;
+
+    }
+    .child1 h4{
+        font-size: 18px;
+    }
+        
+    .headsection button {
+        border: none;
+        background-color: rgb(0, 140, 255);
+        width: 10%;
+        color: white;
+        border-radius: 5px;
+        height: 100%;
+        font-size: 20px;
+    }
+    .second button {
+        background-color: rgb(32, 204, 32);
+    }
+    
+  
+}
+
+@media screen and (min-width:900px) and (max-width:1400px){
+    .container
+    {
+       width: 100%
+    }
+    p{
+        padding-left: 2%;
+    }
+   
+    .contacts
+    {
+        width: 100%;
+    }
+.profileimg{
+    height: 120px;
+}
+tbody p{
+    padding: 0px;
+}
+.key p{
+    text-align: right;
+    line-height: 17px;
+    width: 60%;
+}
+td{
+    width: 50%;
+}
+ .xlp
+ {
+    width: 100% !important;
+    /* justify-content: space-between; */
+ }
+    .namepost h1{
+        font-size: 20px;
+    }
+    .contacts p{
+        font-size:15px ;
+    }
+    .contacts .key p{
+        font-size: 15px;
+    } 
+    .row2
+    {
+        flex-direction: column;
+    }
+    .part1
+    {
+        width: 100%;
+    }
+    .part2{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .graphicskills,.languageskills,.skillsection
+    {margin-top: 5%;
+    width: 30%;}
+    p{
+        font-size: 19px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    .title p{
+        font-size: 20px;
+    }
+    .part2 h3{
+        font-size: 18px;
+    }
+    .wrap p,.wraplanguage p,.wrapgrapgic p
+    {
+      font-size:17px
+    }
+    .wrap .prgressbar
+    {
+        height: 14px;
+        width: 90%;
+    }
+    .circlebox {
+        height: 14px;
+        width: 14px;
+    }
+    .sqbox {
+        height: 15px;
+        width: 15px;
+    }
+    .wrap {
+        margin-top: 0%;
+    }
+    .value p {
+        line-height: 20px;
+    }
+    table{
+        margin-top: 3%;
+    }
+    .child1 h2{
+        font-size: 20px;
+
+    }
+    .child1 h4{
+        font-size: 18px;
+    }
+        
+    .namepost h1
+    {
+        font-size: 33px;
+    }
+    .namepost h2
+    {
+        font-size: 28px;
+    }
+    
+  
 }
