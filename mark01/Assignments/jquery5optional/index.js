@@ -1,24 +1,25 @@
 var Item=[{Item:"111-Silver",Price:"240"},{Item:"142-Gold",Price:"540"},{Item:"121-Diamond",Price:"840"},{Item:"124-Zink",Price:"140"}];
 var Tax=[{tax:0},{tax:5},{tax:12},{tax:18},{tax:28}];
 var prd=[{"item":"111-Silver","Qty":0,"MRP":0,"TAX":0,"TOTAL":0}];
-
 populate();
-function optioner(arr,data)
+function optioner(arr,data,value)
 {
-    var temp="";
+ var temp="";
  for(var i=0;i<arr.length;i++)
  {
     var sign=(data=="tax")?"%": "";
-    temp+='<option value='+arr[i][data]+'>'+arr[i][data]+' '+sign+'</option>';
+    var sel= (arr[i][data]==value)?"selected":"";
+    temp+='<option value="'+arr[i][data]+'" '+sel+'>'+arr[i][data]+' '+sign+'</option>';
  }
  return temp;
 }
 function populate()
 {
+    $("#tbody1").html("");
     var temp="";
     for(var i=0;i<prd.length;i++)
     {
-        temp+='<tr><td><select class="input" id="item" index="'+i+'">'+optioner(Item,"Item")+'</select></td><td><input index="'+i+'" value="'+prd[i].Qty+'" id="Qty" class="input" type="number"></td><td><input index="'+i+'" class="input" id="MRP" value="'+prd[i].MRP+'" type="number"></td><td><select id="TAX" class="input" index="'+i+'">'+optioner(Tax,"tax")+'</select></td><td><input index="'+i+'" id="TOTAL'+i+'" value="'+prd[i].TOTAL+'" type="number" disabled></td><td><button index="'+i+'" class="add">+</button><button index="'+i+'" class="del"><i class="fa fa-trash" aria-hidden="true"></i></button></td></tr>'        
+        temp+='<tr><td><select class="input" id="item" index="'+i+'">'+optioner(Item,"Item",prd[i].item)+'</select></td><td><input index="'+i+'" value="'+prd[i].Qty+'" id="Qty" class="input" type="number"></td><td><input index="'+i+'" class="input" id="MRP" value="'+prd[i].MRP+'" type="number"></td><td><select id="TAX" class="input" index="'+i+'">'+optioner(Tax,"tax",prd[i].TAX)+'</select></td><td><input index="'+i+'" id="TOTAL'+i+'" value="'+prd[i].TOTAL+'" type="number" disabled></td><td><button index="'+i+'" class="add">+</button><button index="'+i+'" class="del"><i class="fa fa-trash" aria-hidden="true"></i></button></td></tr>'        
     }
     $("#tbody1").html(temp);
 }
@@ -33,7 +34,6 @@ $("#tbody1").on("click",".del",function()
     index=parseInt($(this).attr('index'));
     prd.splice( index, 1);
     populate();
-
     taxes();
 })
 function addData(row)
@@ -62,7 +62,6 @@ function addData(row)
 $("#tbody1").on("input",".input",function()
 {
     addData($(this));
-    
     taxes();
   
 })
