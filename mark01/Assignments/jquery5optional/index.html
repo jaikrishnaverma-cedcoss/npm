@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h4 style="margin-left:2%">Add Items</h4>
+
+        <table id="tabley">
+            <thead>
+                <tr>
+                    <th># Item</th>
+                    <th>Qty</th>
+                    <th>MRP</th>
+                    <th>TAX</th>
+                    <th>Total</th>
+                    <th>Operations</th>
+                </tr>
+            </thead>
+            <tbody id="tbody1">
+                 <!-- <tr>
+                    <td colspan="5"></td>
+                    
+                    <td><button class="add">+</button><button class="del"><i class="fa fa-trash"
+                                aria-hidden="true"></i></button></td>
+               </tr> -->
+                <!--  <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><button class="add">+</button><button class="del"><i class="fa fa-trash"
+                                aria-hidden="true"></i></button></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><button class="add">+</button><button class="del"><i class="fa fa-trash"
+                                aria-hidden="true"></i></button></td>
+                </tr> -->
+            </tbody>
+        </table>
+
+        <table id="tablex">
+            <tr>
+                <td><label for="amt">Innovice Amount:</label><br><input id="Innovice" type="text"></td>
+                <td><label for="">Sales/Purchase amount @0%:</label><br><input id="p0" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="">Sales/Purchase@5%:</label><br><input id="p5" type="text"></td>
+                <td><label for="">Sales/Purchase@12%:</label><br><input id="p12" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="">Sales/Purchase@18%:</label><br><input id="p18" type="text"></td>
+                <td><label for="">Sales/Purchase@28%:</label><br><input id="p28" type="text"></td>
+            </tr>
+            <tr>
+                <td><button id="save">Save</button></td>
+            </tr>
+        </table>
+
+    <div class="innovice" style="display: none;">
+        <div class="container" style="border:none">
+            <div class="brand-section">
+                <div class="row">
+                    <div class="col-6">
+                        <h1 class="text-white">J-CART</h1>
+                    </div>
+                    <div class="col-6">
+                        <div class="company-details">
+                            <p class="text-white">Cedcoss vikas khand</p>
+                            <p class="text-white">lucknow, u.p</p>
+                            <p class="text-white">+91 888555XXXX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="body-section">
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="heading">Invoice No.: 001</h2>
+                        <p class="sub-heading">Tracking No. fabcart2025 </p>
+                        <p class="sub-heading">Order Date: 20-20-2021 </p>
+                        <p class="sub-heading">Email Address: jai@cedcoss.com </p>
+                    </div>
+                    <div class="col-6">
+                        <p class="sub-heading">Full Name:  jai</p>
+                        <p class="sub-heading">Address:  gomti river front</p>
+                        <p class="sub-heading">Phone Number:  +918855443312</p>
+                        <p class="sub-heading">City,State,Pincode:  </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="body-section">
+                <h3 class="heading">Ordered Items</h3>
+                <br>
+                <table class="table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th class="w-20">Price</th>
+                            <th class="w-20">Quantity</th>
+
+                            <th class="w-20">Tax</th>
+                            <th class="w-20">Grandtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody id="itbody">
+                        <!-- <tr>
+                            <td>Product Name</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>10</td>
+                        </tr> -->
+                        
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4"  class="text-right">Sub Total</td>
+                            <td id="subtotal"> </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-right">Tax Total 0%</td>
+                            <td class="p0"> </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-right">Tax Total 5%</td>
+                            <td class="p5"> </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-right">Tax Total 12%</td>
+                            <td class="p12"> </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-right">Tax Total 18%</td>
+                            <td class="p18"> </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-right">Tax Total 28%</td>
+                            <td class="p28"> </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-right">Grand Total</td>
+                            <td id="grandTotal"> </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <br>
+                <h3 class="heading">Payment Status: Paid</h3>
+                <h3 class="heading">Payment Mode: Cash on Delivery</h3>
+            </div>
+    
+            <div class="body-section">
+                <p>&copy; Copyright 2022 - J-cart. All rights reserved. 
+                </p>
+            </div>      
+        </div>    
+    </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
