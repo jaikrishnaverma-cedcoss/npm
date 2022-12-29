@@ -1,0 +1,72 @@
+.carticon {
+    font-size: 35px;
+    position: relative;
+}
+
+.cartitems {
+    font-style: initial;
+    background: blue;
+    color: white;
+    width: 22px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1px;
+    right: -7px;
+    font-weight: 900;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.breadcrumb-item a {
+    color: black;
+}
+
+.breadcrumb-item.active {
+    color: black;
+    font-weight: 900;
+}
+
+.incdec {
+    color: grey;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.nav-tabs .nav-link {
+    color: black;
+}
+
+.nav-tabs .nav-link.active {
+    color: #294cff;
+    border: none;
+    border-bottom: 3px solid;
+    background-color: inherit;
+    border-color: #294cff;
+}
+
+.navTab {
+    font-size: 1.05rem;
+}
+
+.transdark {
+    background-color: rgba(84, 79, 79, 0.202);
+    color: white;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+::placeholder,
+:-ms-input-placeholder,
+::-ms-input-placeholder {
+    color: rgb(205, 205, 205);
+    font-style: italic;
+}
