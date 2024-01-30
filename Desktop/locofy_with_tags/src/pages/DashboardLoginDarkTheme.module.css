@@ -1,0 +1,92 @@
+.vectorsIcon {
+  position: absolute;
+  top: 609px;
+  left: 0;
+  width: 1280px;
+  height: 111px;
+}
+.lightModeDarkMode {
+  position: absolute;
+  top: 630px;
+  left: 32px;
+  width: 78px;
+  height: 78px;
+}
+.forgotPassword,
+.rememberMe {
+  position: absolute;
+  top: 0;
+  left: 165px;
+  font-weight: 500;
+}
+.rememberMe {
+  left: 25px;
+  color: var(--color-white);
+}
+.sectionForgotChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  background-color: var(--color-darkslategray-100);
+  width: 18px;
+  height: 17px;
+}
+.sectionForgot {
+  position: absolute;
+  top: 320px;
+  left: 27px;
+  width: 293px;
+  height: 17px;
+  color: #20df7f;
+  font-family: var(--font-montserrat);
+}
+.loginBtn,
+.passwordFormgroup,
+.usernameFormgroup {
+  width: 300px;
+  position: absolute;
+  top: 361px;
+  left: 24px;
+}
+.passwordFormgroup,
+.usernameFormgroup {
+  border: 0;
+  background-color: transparent;
+  top: 252px;
+}
+.usernameFormgroup {
+  top: 175px;
+}
+.signInAnd {
+  top: 119px;
+  left: 0;
+  font-size: var(--font-size-base);
+}
+.form,
+.signIn,
+.signInAnd {
+  position: absolute;
+}
+.signIn {
+  top: 0;
+  left: 68px;
+  font-size: var(--font-size-45xl);
+}
+.form {
+  top: 157px;
+  left: 466px;
+  width: 347px;
+  height: 406px;
+}
+.dashboardLoginDarkTheme {
+  position: relative;
+  background-color: var(--color-darkslategray-200);
+  width: 100%;
+  height: 720px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--font-lexend-deca);
+}

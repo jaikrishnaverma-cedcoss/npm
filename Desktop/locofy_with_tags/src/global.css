@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-lexend-deca: "Lexend Deca";
+  --font-montserrat: Montserrat;
+
+  /* font sizes */
+  --font-size-45xl: 64px;
+  --font-size-base: 16px;
+  --font-size-sm: 14px;
+
+  /* Colors */
+  --color-darkslategray-100: #224957;
+  --color-darkslategray-200: #093545;
+  --color-white: #fff;
+}
