@@ -6,6 +6,7 @@ import TableCell from '@mui/material/TableCell';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Title from './Title';
+import { Paper, TableContainer } from '@mui/material';
 
 // Generate Order Data
 function createData(id, date, name, shipTo, paymentMethod, amount) {
@@ -56,7 +57,8 @@ export default function Orders() {
   return (
     <React.Fragment>
       <Title>Recent Orders</Title>
-      <Table size="small">
+      <TableContainer component={Paper}>
+     <Table size="small"  sx={{minWidth: 600 }}  >
         <TableHead>
           <TableRow>
             <TableCell>Date</TableCell>
@@ -78,6 +80,7 @@ export default function Orders() {
           ))}
         </TableBody>
       </Table>
+     </TableContainer>
       <Link color="primary" href="#" onClick={preventDefault} sx={{ mt: 3 }}>
         See more orders
       </Link>

@@ -4,10 +4,11 @@ import React from 'react'
 import Chart from './Chart'
 import Deposits from './Deposits'
 import Orders from './Orders'
+import DI from '../../utility/DependenciesInjection'
 
 const Dashboard = () => {
   return (
-    <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
+    <>
     <Grid container spacing={3}>
       {/* Chart */}
       <Grid item xs={12} md={8} lg={9}>
@@ -43,8 +44,8 @@ const Dashboard = () => {
       </Grid>
     </Grid>
     <Copyright sx={{ pt: 4 }} />
-  </Container>
+  </>
   )
 }
 
-export default Dashboard
+export default DI(Dashboard)

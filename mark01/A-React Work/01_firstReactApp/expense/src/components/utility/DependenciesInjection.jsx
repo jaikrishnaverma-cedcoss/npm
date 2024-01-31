@@ -77,10 +77,11 @@ const DI = (WrappedComponent) => {
       const data = await fakeApiResponse(url);
       return data;
     }, []);
+    console.log({contextData})
     return (
       <WrappedComponent
         {...props}
-        di={{ contextData, GET, POST, FAKE, error, success, navigate }}
+        di={{ contextData,session:contextData?.state?.session, GET, POST, FAKE, error, success, navigate }}
       />
     );
   };

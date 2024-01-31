@@ -11,7 +11,7 @@ const Onboarding = () => {
   } = data;
   const navigate = useNavigate();
   useEffect(() => {
-    if (session) navigate("panel");
+    if (session&&Object.keys(session) > 0) navigate("panel");
     else navigate("login");
     setLoader(false);
   }, []);

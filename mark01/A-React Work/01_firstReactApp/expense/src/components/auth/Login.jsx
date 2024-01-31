@@ -13,6 +13,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import DI from "../utility/DependenciesInjection";
+import { CircularProgress } from "@mui/material";
 function Copyright(props) {
   return (
     <Typography
@@ -37,18 +38,29 @@ const defaultTheme = createTheme();
 
 const Login = (props) => {
   const {
-    di: { FAKE, success, error, navigate },
+    di: {
+      FAKE,
+      success,
+      error,
+      navigate,
+      contextData: { setState },
+    },
   } = props;
-
+  const [loading, setLoading] = React.useState(false);
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     const email = data.get("email");
     const password = data.get("password");
     if (email && password) {
+      setLoading(true);
       FAKE("login").then((res) => {
+        setLoading(false);
         if (res.success) {
-          success(res?.msg);
+          setState((prev) => {
+            return { ...prev, session: res.data };
+          });
+          // success(res?.msg);
           navigate("/panel");
         } else {
           error(res?.msg);
@@ -109,9 +121,14 @@ const Login = (props) => {
               type="submit"
               fullWidth
               variant="contained"
+              loading={true}
               sx={{ mt: 3, mb: 2 }}
             >
-              Sign In
+              {loading ? (
+                <CircularProgress color="inherit" size={20} />
+              ) : (
+                "Sign In"
+              )}
             </Button>
             <Grid container>
               <Grid item xs>
