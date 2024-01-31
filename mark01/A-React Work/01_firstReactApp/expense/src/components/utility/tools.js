@@ -4,3 +4,6 @@ export function toTitleCase(str) {
     });
 }
 export const noRef=(obj)=>JSON.parse(JSON.stringify(obj))
+export const  regex = {
+    nonNegativeIntFloat:/^\d*\.?\d+$/
+};

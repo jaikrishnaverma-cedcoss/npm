@@ -61,8 +61,21 @@ export const fakeData = {
       },
     ],
   },
+  transactions:{
+    success: true,
+    msg: "successfully fetched",
+    data:[
+      {
+        
+      }
+    ]
+  },
   wrong_endpoint: {
-    status: false,
+    success: false,
     msg: "wrong api endpoint call",
+  },
+  success_endpoint: {
+    success: true,
+    msg: "data saved successfully",
   },
 };
